@@ -1,0 +1,42 @@
+server:
+  port: 10080
+http:
+    log-request-details: true
+#  compression:
+#    enabled: false
+#spring:
+#  http:
+#    encoding:
+#      force-request: false
+#management:
+#  server:
+#    port: 10081
+#  info:
+#    git:
+#      mode: full
+#    build:
+#      enabled: true
+#  health:
+#    jms:
+#      enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#          - '*'
+#  endpoint:
+#    metrics:
+#      enabled: true
+#    prometheus:
+#      enabled: true
+#  metrics:
+#    export:
+#      prometheus:
+#        enabled: true
+
+spring:
+  datasource:
+    url: 'jdbc:h2:tcp://localhost:1521/test-empty;MODE=Oracle;DB_CLOSE_ON_EXIT=FALSE'
+    username: sa
+    password: sa
+    driver-class-name: 'org.h2.Driver'
